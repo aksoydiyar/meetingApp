@@ -8,7 +8,8 @@ namespace MeetingApp.Controllers{
         public IActionResult Index()
         {
             int saat=DateTime.Now.Hour;
-            ViewBag.Selamlama=saat > 12 ? "İyi günler":"Günaydın";
+            ViewBag.Selamlama=saat > 12 ? "Merhaba":"Günaydın";
+            
             return View();
 
         }
